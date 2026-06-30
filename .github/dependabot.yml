@@ -1,15 +1,27 @@
 version: 2
 
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "08:00"
-  open-pull-requests-limit: 30
-  reviewers:
-  - caiocampos
-  - caoancap
-  assignees:
-  - caiocampos
-  - caoancap
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "08:00"
+    open-pull-requests-limit: 10
+    reviewers:
+    - caiocampos
+    - caoancap
+    assignees:
+    - caiocampos
+    - caoancap
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+    - caiocampos
+    - caoancap
+    assignees:
+    - caiocampos
+    - caoancap
